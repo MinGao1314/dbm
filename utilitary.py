@@ -25,6 +25,14 @@ def complex_GUE(dim):
     A_sym = (1/2)*(A + (A.H))
     return A_sym * (1/2)**(0.5)
 
+def herm_matrix(dim, beta): #beta=1 pour real et 2 pour herm
+    B = np.random.randn(dim, dim)
+    B_tild = np.random.randn(dim, dim)
+    diag = (2/(beta*dim))**0.5 * np.diag(np.diag(B))
+    triu = (1/(beta*dim))**0.5 * (np.triu(B,1) + 1j*(beta-1)*np.triu(B_tild,1))
+    H = np.zeros((dim,dim)) + diag + triu + triu.T
+    return H
+
 
 if __name__ == '__main__':
-    print(complex_hermitian_matrix_generation(3))
+    print(herm_matrix(3,2))

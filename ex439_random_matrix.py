@@ -1,9 +1,10 @@
 import plotly.graph_objs as go
 import plotly.offline
 import numpy as np
+from utilitary import herm_matrix
 
 
-class DPP438:
+class DPP439_random_matrix:
     def __init__(self, n_traj, n_samples, tf, M):
         self.n_traj = n_traj
         self.n_samples = n_samples
@@ -15,6 +16,7 @@ class DPP438:
         self.eigen_values = np.zeros((self.n_samples, self.n_traj))
         self.diag()
 
+
     def initialisation(self, M):
         real_values = np.random.uniform(-0.05, 0.05, size=(self.n_traj, M))
         im_values = np.random.uniform(-0.05, 0.05, size=(self.n_traj, M))
@@ -25,11 +27,7 @@ class DPP438:
 
     def generate(self):
         for sample in range(self.n_samples-1):
-            real_values = np.random.randn(self.n_traj, self.n_traj)
-            im_values = np.random.randn(self.n_traj, self.n_traj)
-            A = np.matrix(real_values + 1j * im_values) * (1/2)**0.5
-            V_t = np.dot(A , A.H)
-            self.dpp_matrix[sample+1] = self.dpp_matrix[sample] + (self.dt**(1/2) * V_t)
+            self.dpp_matrix[sample+1] = self.dpp_matrix[sample] + herm_matrix(self.n_traj, beta=2) - self.dpp_matrix[sample]*self.dt
 
     def diag(self):
         for sample in range(self.n_samples):
@@ -48,7 +46,6 @@ class DPP438:
         plotly.offline.init_notebook_mode()
         plotly.offline.plot(fig, filename=''.join(['plot/', filename]))
 
-
 if __name__ == '__main__':
-        test = DPP438(100, 10, 1, 3)
-        test.plot('test438.html')
+        test = DPP439_random_matrix(50, 100, 1, 3)
+        test.plot('test439.html')
