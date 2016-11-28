@@ -18,16 +18,15 @@ class DPP439_random_matrix:
 
 
     def initialisation(self, M):
-        real_values = np.random.uniform(-0.05, 0.05, size=(self.n_traj, M))
-        im_values = np.random.uniform(-0.05, 0.05, size=(self.n_traj, M))
-        A = np.matrix(real_values + 1j * im_values)
-        V_0 = np.dot(A , A.H)  # le .H conjugue puis transpose
+        real_values = np.random.uniform(-0.0005, 0.0005, size=(self.n_traj, self.n_traj))
+        im_values = np.random.uniform(-0.0005, 0.0005, size=(self.n_traj, self.n_traj))
+        V_0 = np.matrix(real_values + 1j * im_values)
         self.dpp_matrix[0] = V_0
         return V_0
 
     def generate(self):
         for sample in range(self.n_samples-1):
-            self.dpp_matrix[sample+1] = self.dpp_matrix[sample] + herm_matrix(self.n_traj, beta=2) - self.dpp_matrix[sample]*self.dt
+            self.dpp_matrix[sample+1] = self.dpp_matrix[sample] + herm_matrix(self.n_traj, beta=2)*(self.dt)**0.5 - self.dpp_matrix[sample]*self.dt
 
     def diag(self):
         for sample in range(self.n_samples):
@@ -48,4 +47,4 @@ class DPP439_random_matrix:
 
 if __name__ == '__main__':
         test = DPP439_random_matrix(50, 100, 1, 3)
-        test.plot('test439.html')
+        test.plot('test439_random_matrix.html')

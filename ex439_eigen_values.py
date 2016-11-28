@@ -4,24 +4,23 @@ import numpy as np
 
 
 class DPP439_eigen_values:
-    def __init__(self, n_traj, n_samples, tf, M):
+    def __init__(self, n_traj, n_samples, tf):
         self.n_traj = n_traj
         self.n_samples = n_samples
         self.T = tf
         self.dt = tf/n_samples
         self.eigen_values = np.zeros((self.n_samples, self.n_traj))
-        self.initialisation(M)
-        self.generate(M)
+        self.initialisation()
+        self.generate()
 
-    def initialisation(self, M):
-        real_values = np.random.randn(self.n_traj, M)
-        im_values = np.random.randn(self.n_traj, M)
-        A = np.matrix(real_values + 1j * im_values)
-        V_0 = np.dot(A, A.H)  # le .H conjugue puis transpose
+    def initialisation(self):
+        real_values = np.random.uniform(-0.05, 0.05, size=(self.n_traj, self.n_traj))
+        im_values = np.random.uniform(-0.05, 0.05, size=(self.n_traj, self.n_traj))
+        V_0 = np.matrix(real_values + 1j * im_values)
         self.eigen_values[0] = sorted(np.real(np.linalg.eigvals(V_0)), reverse=False)
         return self.eigen_values
 
-    def generate(self,M):
+    def generate(self):
         W = 0
         for sample in range(self.n_samples-1):
             #print(self.eigen_values[sample])
@@ -36,7 +35,7 @@ class DPP439_eigen_values:
                                                  (1/self.n_traj)* sum_term * self.dt - \
                                                  self.eigen_values[sample][i] * self.dt
                 #print("eigen:", self.eigen_values[sample+1][i])
-            W = W * self.dt * np.random.randn()
+                W = self.dt * np.random.randn()
         return self.eigen_values
 
     def plot(self, filename):
@@ -53,6 +52,6 @@ class DPP439_eigen_values:
         plotly.offline.plot(fig, filename=''.join(['plot/', filename]))
 
 if __name__ == '__main__':
-    test = DPP439_eigen_values(50, 1000, 1, 20)
+    test = DPP439_eigen_values(100, 100, 1)
     print(test.eigen_values)
     test.plot('test439_eigen_values.html')
