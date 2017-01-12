@@ -19,7 +19,6 @@ class DPP438_eigen_values:
         return self.eigen_values
 
     def generate(self,M):
-        W = 0
         for sample in range(self.n_samples-1):
             #print(self.eigen_values[sample])
             for i in range(self.n_traj):
@@ -28,11 +27,12 @@ class DPP438_eigen_values:
                 #print(lbda_i, "\n", eigen_values_list)
                 sum_term = sum ([ (lbda_k + lbda_i)/(lbda_k - lbda_i) for lbda_k in eigen_values_list ])
                 print("sumterm", sum_term)
+                W = (self.dt) ** (0.5) * np.random.randn()
                 self.eigen_values[sample+1][i] = self.eigen_values[sample][i] + \
                                           2* W *(self.eigen_values[sample][i]/self.n_traj)**(0.5) + \
                                           2* ( (M/self.n_traj) + sum_term ) * self.dt
                 print("eigen:", self.eigen_values[sample+1][i])
-            W = W * self.dt * np.random.randn()
+
         return self.eigen_values
 
 
