@@ -4,3 +4,8 @@
 auth/
 
 __pycache__/
+
+classic_dpp/.ipynb_checkpoints/
+ex439/.ipynb_checkpoints/
+beta_ensemble/.ipynb_checkpoints/
+dyson_brownian_motion_with_return/.ipynb_checkpoints/
