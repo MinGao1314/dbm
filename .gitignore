@@ -4,3 +4,12 @@
 auth/
 
 __pycache__/
+
+wishart/.ipynb_checkpoints/
+wishart/plot/
+ornstein_ulhenbeck/.ipynb_checkpoints/
+ornstein_ulhenbeck/plot/
+beta_ensemble/.ipynb_checkpoints/
+beta_ensemble/plot/
+dyson_brownian_motion/.ipynb_checkpoints/
+dyson_brownian_motion/plot/
