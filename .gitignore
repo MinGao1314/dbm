@@ -5,8 +5,9 @@ auth/
 
 __pycache__/
 
-classic_dpp/.ipynb_checkpoints/
-ex439/.ipynb_checkpoints/
+
+ornstein_ulhenbeck/.ipynb_checkpoints/
+ornstein_ulhenbeck/plot/
 beta_ensemble/.ipynb_checkpoints/
 beta_ensemble/plot/
 dyson_brownian_motion/.ipynb_checkpoints/
