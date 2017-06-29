@@ -8,4 +8,6 @@ __pycache__/
 classic_dpp/.ipynb_checkpoints/
 ex439/.ipynb_checkpoints/
 beta_ensemble/.ipynb_checkpoints/
-dyson_brownian_motion_with_return/.ipynb_checkpoints/
+beta_ensemble/plot/
+dyson_brownian_motion/.ipynb_checkpoints/
+dyson_brownian_motion/plot/
