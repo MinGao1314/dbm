@@ -5,7 +5,8 @@ auth/
 
 __pycache__/
 
-
+wishart/.ipynb_checkpoints/
+wishart/plot/
 ornstein_ulhenbeck/.ipynb_checkpoints/
 ornstein_ulhenbeck/plot/
 beta_ensemble/.ipynb_checkpoints/
