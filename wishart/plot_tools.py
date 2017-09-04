@@ -67,7 +67,7 @@ def plot_traj_with_histo(dbm, title):
     traj_hist = fig.add_subplot(gs[0, 3])
 
     # plot trajectories
-    t = np.matlib.repmat(np.arange(0, dbm.tf, dbm.dt), dbm.n_traj, 1)
+    t = np.matlib.repmat(np.arange(0, dbm.tf+dbm.dt, dbm.dt), dbm.n_traj, 1)
     traj_fig.plot(t.T, dbm.eigen_values)
 
     # plot final values histogram
@@ -88,11 +88,11 @@ def plot_traj_with_histo_sclaw(dbm_rescale,R , title):
     traj_hist = fig.add_subplot(gs[0, 3])
 
     # plot trajectories
-    t = np.matlib.repmat(np.arange(0, dbm_rescale.tf, dbm_rescale.dt), dbm_rescale.n_traj, 1)
+    t = np.matlib.repmat(np.arange(0, dbm_rescale.tf+dbm_rescale.dt, dbm_rescale.dt), dbm_rescale.n_traj, 1)
     traj_fig.plot(t.T, dbm_rescale.eigen_values)
 
     # plot final values histogram
-    hist = traj_hist.hist(dbm_rescale.eigen_values[-1], bins=10, normed=True, orientation='horizontal',
+    hist = traj_hist.hist(dbm_rescale.eigen_values[-1], bins=10, range=(-R,R), normed=True, orientation='horizontal',
                           label="Histogram at$\ t_f$")
 
     plt.setp(traj_hist.get_yticklabels(), visible=False)
