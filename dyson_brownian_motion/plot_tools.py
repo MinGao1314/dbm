@@ -1,6 +1,7 @@
 import numpy as np
 from matplotlib.gridspec import GridSpec
 import matplotlib.pyplot as plt
+from numpy.matlib import repmat
 
 def sc_law(x,R=1):
     return 2/(np.pi*R**2) * np.sqrt(R**2 - x**2)
