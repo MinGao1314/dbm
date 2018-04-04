@@ -1,0 +1,448 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nyt/global/}
+    \entry{agz}{book}{}
+      \name{author}{3}{}{%
+        {{hash=377e4239633f1b2a204437de375d22e1}{%
+           family={Anderson},
+           family_i={A\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+        {{hash=77ff7dbcf5a6320caeb5a930cbddaa62}{%
+           family={Guionnet},
+           family_i={G\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=c56d1e503d29d5cac38cb50e99d8ea8d}{%
+           family={Zeitouni},
+           family_i={Z\bibinitperiod},
+           given={O.},
+           given_i={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{bed3e7b72bc4db37f4e74278f1d09677}
+      \strng{fullhash}{bed3e7b72bc4db37f4e74278f1d09677}
+      \field{labelalpha}{AGZ10}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-521-19452-5}
+      \field{series}{Cambridge studies in advanced mathematics}
+      \field{title}{An introduction to random matrices}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://opac.inria.fr/record=b1130267
+      \endverb
+    \endentry
+    \entry{bru}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2985646ee48093d1e0ede40aa2580ed9}{%
+           family={Bru},
+           family_i={B\bibinitperiod},
+           given={Marie-France},
+           given_i={M\bibinithyphendelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2985646ee48093d1e0ede40aa2580ed9}
+      \strng{fullhash}{2985646ee48093d1e0ede40aa2580ed9}
+      \field{labelalpha}{Bru91}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Theoretical Probability}
+      \field{number}{4}
+      \field{title}{Wishart processes}
+      \field{volume}{4}
+      \field{year}{1991}
+      \field{pages}{725\bibrangedash 751}
+      \range{pages}{27}
+    \endentry
+    \entry{dumitriu2002matrix}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3acbe2db37bcb119ed244e6756ba3992}{%
+           family={Dumitriu},
+           family_i={D\bibinitperiod},
+           given={Ioana},
+           given_i={I\bibinitperiod}}}%
+        {{hash=01a6ca61fcd12a3a071ec49304df57f8}{%
+           family={Edelman},
+           family_i={E\bibinitperiod},
+           given={Alan},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{907e94b2cd33dbe977e3bb79cfd66637}
+      \strng{fullhash}{907e94b2cd33dbe977e3bb79cfd66637}
+      \field{labelalpha}{DE02}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{number}{11}
+      \field{title}{Matrix models for beta ensembles}
+      \field{volume}{43}
+      \field{year}{2002}
+      \field{pages}{5830\bibrangedash 5847}
+      \range{pages}{18}
+    \endentry
+    \entry{dyson1962brownian}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d42facd743b235ab20fe469eb819d209}{%
+           family={Dyson},
+           family_i={D\bibinitperiod},
+           given={Freeman\bibnamedelima J},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{d42facd743b235ab20fe469eb819d209}
+      \strng{fullhash}{d42facd743b235ab20fe469eb819d209}
+      \field{labelalpha}{Dys62}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{number}{6}
+      \field{title}{A Brownian-motion model for the eigenvalues of a random matrix}
+      \field{volume}{3}
+      \field{year}{1962}
+      \field{pages}{1191\bibrangedash 1198}
+      \range{pages}{8}
+    \endentry
+    \entry{grac}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e84f1cbc1686b013d76a00c5f98572b8}{%
+           family={Graczyk},
+           family_i={G\bibinitperiod},
+           given={P.},
+           given_i={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e84f1cbc1686b013d76a00c5f98572b8}
+      \strng{fullhash}{e84f1cbc1686b013d76a00c5f98572b8}
+      \field{labelalpha}{Gra14}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stochastic analysis methods in Wishart theory}
+      \field{year}{2014}
+    \endentry
+    \entry{2017arXiv170702700H}{article}{}
+      \name{author}{2}{}{%
+        {{hash=50b2dcef8b986e240f428c6bf2ccd54b}{%
+           family={{Holcomb}},
+           family_i={H\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=6a061e9349d7cad542ed61aa699d64fc}{%
+           family={{Paquette}},
+           family_i={P\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{02e27d785c79be76e575c4bab7fb86c9}
+      \strng{fullhash}{02e27d785c79be76e575c4bab7fb86c9}
+      \field{labelalpha}{HP17}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.PR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{ArXiv e-prints}
+      \field{month}{07}
+      \field{title}{{Tridiagonal Models for Dyson Brownian Motion}}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1707.02700
+      \endverb
+      \keyw{Mathematics - Probability}
+    \endentry
+    \entry{simonsto}{unpublished}{}
+      \name{author}{2}{}{%
+        {{hash=81c311fd7be5c5d55f6e1b570558b69c}{%
+           family={Jeanblanc},
+           family_i={J\bibinitperiod},
+           given={Monique},
+           given_i={M\bibinitperiod}}}%
+        {{hash=08dc7f6905ed625b8f140516bdb6060e}{%
+           family={Simon},
+           family_i={S\bibinitperiod},
+           given={Thomas},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{122cc6a45207ca3efe82108e5d69d035}
+      \strng{fullhash}{122cc6a45207ca3efe82108e5d69d035}
+      \field{labelalpha}{JS05}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{IRBD}
+      \field{title}{Elements de calcul stochastique}
+      \field{year}{2005}
+    \endentry
+    \entry{Joh06}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ef1937a4eacd273b9e734509fa1e7ab9}{%
+           family={Johansson},
+           family_i={J\bibinitperiod},
+           given={Kurt},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef1937a4eacd273b9e734509fa1e7ab9}
+      \strng{fullhash}{ef1937a4eacd273b9e734509fa1e7ab9}
+      \field{labelalpha}{Joh06}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We survey recent results on determinantal processes, random growth, random tilings and their relation to random matrix theory.}
+      \field{eprintclass}{math-ph}
+      \field{eprinttype}{arXiv}
+      \field{issn}{09248099}
+      \field{journaltitle}{Les Houches Summer School Proceedings}
+      \field{number}{C}
+      \field{title}{{Course 1 Random matrices and determinantal processes}}
+      \field{volume}{83}
+      \field{year}{2006}
+      \field{pages}{1\bibrangedash 56}
+      \range{pages}{56}
+      \verb{doi}
+      \verb 10.1016/S0924-8099(06)80038-7
+      \endverb
+      \verb{eprint}
+      \verb 0510038
+      \endverb
+    \endentry
+    \entry{Jo2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e1d679131ac3d5d291284c8e61f43f78}{%
+           family={Johansson},
+           family_i={J\bibinitperiod},
+           given={Kurt\bibnamedelima Johansson},
+           given_i={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e1d679131ac3d5d291284c8e61f43f78}
+      \strng{fullhash}{e1d679131ac3d5d291284c8e61f43f78}
+      \field{labelalpha}{Joh01}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Mathematical Physics}
+      \field{number}{3}
+      \field{title}{Universality of the Local Spacing Distribution in Certain Ensembles of Hermitian Wigner Matrices}
+      \field{volume}{215}
+      \field{year}{2001}
+      \field{pages}{683\bibrangedash 705}
+      \range{pages}{23}
+    \endentry
+    \entry{karatzas2012brownian}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f2b9c76604ea66b2ab28d18a454d3fbf}{%
+           family={Karatzas},
+           family_i={K\bibinitperiod},
+           given={Ioannis},
+           given_i={I\bibinitperiod}}}%
+        {{hash=b9c49e89391bfaa86e78640745af0647}{%
+           family={Shreve},
+           family_i={S\bibinitperiod},
+           given={Steven},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{39f8d2a02e5a4b442aa5bda3a5ea9e9a}
+      \strng{fullhash}{39f8d2a02e5a4b442aa5bda3a5ea9e9a}
+      \field{labelalpha}{KS12}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Brownian motion and stochastic calculus}
+      \field{volume}{113}
+      \field{year}{2012}
+    \endentry
+    \entry{kloeden2012numerical}{book}{}
+      \name{author}{3}{}{%
+        {{hash=495e189508efe97f56adb309c9e101ea}{%
+           family={Kloeden},
+           family_i={K\bibinitperiod},
+           given={Peter\bibnamedelima Eris},
+           given_i={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a4fb5859192206ba44cf72178b85abb6}{%
+           family={Platen},
+           family_i={P\bibinitperiod},
+           given={Eckhard},
+           given_i={E\bibinitperiod}}}%
+        {{hash=9f04fc21ce30db2c5f73279badb3a400}{%
+           family={Schurz},
+           family_i={S\bibinitperiod},
+           given={Henri},
+           given_i={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{dbc2e9f794c24d28c713531a31ed1f92}
+      \strng{fullhash}{dbc2e9f794c24d28c713531a31ed1f92}
+      \field{labelalpha}{KPS12}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerical solution of SDE through computer experiments}
+      \field{year}{2012}
+    \endentry
+    \entry{legall}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=99c3d41afd0c1415e62f8312228ca0c6}{%
+           family={Le\bibnamedelima Gall},
+           family_i={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Jean-François},
+           given_i={J\bibinithyphendelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{99c3d41afd0c1415e62f8312228ca0c6}
+      \strng{fullhash}{99c3d41afd0c1415e62f8312228ca0c6}
+      \field{labelalpha}{Le 11}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Université Paris-Sud}
+      \field{title}{Mouvement Brownien, martingales et calcul stochastique}
+      \field{year}{2011}
+    \endentry
+    \entry{sebastienGithub}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b43bb0ce29041c9533ae2c966540cf57}{%
+           family={Ohleyer},
+           family_i={O\bibinitperiod},
+           given={Sébastien},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b43bb0ce29041c9533ae2c966540cf57}
+      \strng{fullhash}{b43bb0ce29041c9533ae2c966540cf57}
+      \field{labelalpha}{Ohl17}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Python code for Dyson Brownian motion}}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/sohleyer/dbm
+      \endverb
+    \endentry
+    \entry{oksendal2003stochastic}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=cac857839c7186616d47bd88d51f7234}{%
+           family={{Ø}ksendal},
+           family_i={Ø\bibinitperiod},
+           given={Bernt},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{cac857839c7186616d47bd88d51f7234}
+      \strng{fullhash}{cac857839c7186616d47bd88d51f7234}
+      \field{labelalpha}{Øks03}
+      \field{sortinit}{Ø}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Stochastic differential equations}
+      \field{title}{Stochastic differential equations}
+      \field{year}{2003}
+      \field{pages}{65\bibrangedash 84}
+      \range{pages}{20}
+    \endentry
+    \entry{taotopics}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6b917efc3c9e7a5d47d3ddf4ed942192}{%
+           family={Tao},
+           family_i={T\bibinitperiod},
+           given={T.},
+           given_i={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Soc.}%
+      }
+      \strng{namehash}{6b917efc3c9e7a5d47d3ddf4ed942192}
+      \strng{fullhash}{6b917efc3c9e7a5d47d3ddf4ed942192}
+      \field{labelalpha}{Tao12}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780821885079}
+      \field{series}{Graduate studies in mathematics}
+      \field{title}{Topics in Random Matrix Theory}
+      \field{year}{2012}
+      \verb{url}
+      \verb https://books.google.fr/books?id=Hjq%5C_JHLNPT0C
+      \endverb
+    \endentry
+    \entry{Wig55}{article}{}
+      \name{author}{1}{}{%
+        {{hash=97e8ee8ab7a996467e103b4ad54d51cc}{%
+           family={Wigner},
+           family_i={W\bibinitperiod},
+           given={Eugene\bibnamedelima P},
+           given_i={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{97e8ee8ab7a996467e103b4ad54d51cc}
+      \strng{fullhash}{97e8ee8ab7a996467e103b4ad54d51cc}
+      \field{labelalpha}{Wig55}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of Mathematics}
+      \field{title}{Characteristic vectors of bordered matrices with infinite dimensions}
+      \field{year}{1955}
+      \field{pages}{548\bibrangedash 564}
+      \range{pages}{17}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

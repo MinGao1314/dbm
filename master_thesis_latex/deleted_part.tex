@@ -1,0 +1,65 @@
+% Hermitian Wigner matrices
+	\begin{definition}[Hermitian Wigner matrices]\label{def : wigner matrices}
+		Consider two independant families of independant and identically distributed (i.i.d.) random variables  $\ (Z_{ij})_{1\leq i,j\leq N}$ (complex-valued) and$\ (Y_{i})_{1\leq i\leq N}$ (real valued), zero mean, such that $\ \mathbb{E}Z_{1,2}^2=0$ and $\ \mathbb{E}|Z_{1,2}|^2=1$.
+		Consider a$\ N\times N$ matrix$\ W_N$ with entries$\ (W_{ij})_{1\leq i,j\leq N}$ satisfying :
+		\begin{align}
+			W_{i,j}=\overline{W_{j,i}} =\left\{
+	    					\begin{array}{ll}
+	        					Z_{i,j}/\sqrt{N} & if\ i<j  \\
+	        					Y_i/\sqrt{N} & if\ i=j
+	    					\end{array}\right.
+		\end{align}
+		$\ W_N$ is a Hermitian Wigner matrix.
+	\end{definition}
+
+% changement de temps
+Here we catch the other link we are trying to highlight. The eigenvalues trajectories keep invariant particular distribution of the eigenvalues over the time. In the case of the rescaled Dyson Brownian motion (Figure \ref{fig : dbm_rescale}), this particular distribution is the semicircle law. Furthermore, let us try to see which SDEs are involved by the switch $\mu_i(t)=\lambda_i(t)/\sqrt{t}$
+
+		\begin{align}
+			d\mu_i(t)&=-\frac{1}{2t^{3/2}}\lambda_i(t)dt+\frac{1}{\sqrt{t}}d\lambda_i(t)\notag \\
+			&=-\frac{1}{2t}\mu_i(t)dt+\frac{1}{\sqrt{t}}\left(\frac{1}{\sqrt{N}}dw_i(t) + \frac{1}{N}\sum_{\substack{j=1 \\ j \neq i}}^N\frac{1}{\lambda_i(t)-\lambda_j(t)}dt\right)\notag \\
+			&=\frac{1}{\sqrt{t}}\frac{1}{\sqrt{N}}dw_i(t)+\frac{1}{\sqrt{t}}\frac{1}{N}\sum_{\substack{j=1 \\ j \neq i}}^N\frac{1}{\lambda_i(t)-\lambda_j(t)}dt-\frac{1}{2t}\mu_i(t)dt \notag \\
+			&=\frac{1}{\sqrt{t}}\frac{1}{\sqrt{N}}dw_i(t)+\frac{1}{t}\frac{1}{N}\sum_{\substack{j=1 \\ j \neq i}}^N\frac{1}{\mu_i(t)-\mu_j(t)}dt-\frac{1}{2t}\mu_i(t)dt \notag
+		\end{align}
+		\begin{remark}\label{rem: time changing}
+		\textcolor{red}{chaque terme a un facteur qui depend du temps (un sens de poser dt'=dt/t?). Finalement, on n'obtient pas la bonne EDS sauf pour $t=1$. Est-ce vraiment ce qu'on cherche à faire? L'EDS vérifiée par $\mu_i(t)=\lambda_i(t)/\sqrt{t}$. Car en pratique, on génère puis on divise... Pas le sentiment que cela revienne au même...}
+		\end{remark}
+
+%je sais plus
+	\begin{remark}\label{rem: matrix SDE notation}
+	During the following study, we will sometimes use the notation$\ dX_t = dH_t$ with initial conditions $X(0)$ to point the SDE$\ X(t)=X(0)+H(t)$ - especially when this SDE has a complex form. This notation allows us to define more complicated random matrices SDE in a simple way. However, the reader should keep in mind that this expression remains a notation and remember what it refers to.
+	\end{remark}
+	
+Considering a classical Dyson Brownian motion with initial condition$\ X(0)=0$, we remark that at each time$\ t$,$\ X(t)$ is close to a GUE matrix. Indeed,$\ X(t)=H(t)$ with$\ (H(t))_{t\geq0}$ an Hermitian Brownian motion. So$\ X(t)$ is an Hermitian matrix, with complex Brownian motion until the time$\ t$ as entries (with a normalisation constant). Thus, these entries follow$\ \mathcal{N}_{\mathbb{C}}(0,1)$ multiplied by the standard deviation of the Brownian and a normalisation factor.
+
+		In other words, one can refer to \cite{Jo2001} where the link between GUE matrices and Dyson Brownian motion is well explained. In this paper, the author denote a Dyson Brownian motion as $\ (X(t))_{t\geq 0}$ with its eigenvalues$\ (\lambda_i(t))_{1\leq i\leq N} \in \Delta_N$ satisfying the following system of SDEs : 
+		\begin{equation}
+			d\lambda_i = dB_i + \sum_{k \neq i} \frac{1}{\lambda_i - \lambda_k}dt
+		\end{equation}
+		where$\ B_i$ are real independant standard Brownian motions with initial conditions$\ \lambda_i(0) = y_i, 1\leq i\leq N$.
+		This result is slightly different from the result presented in Theorem \ref{dyson-th}. Indeed, in \cite{taotopics} or in \cite{Jo2001}, the coefficient of diffusion is equal to $1$ and not to $1/\sqrt{N}$ and there is not the factor $1/N$ before the sum of eigenvalues difference inverse. This is due to the definition of the process at a matrix level. \cite{taotopics} and \cite{Jo2001} use GUE matrix as increment in random matrix SDE whereas \cite{agz} and Theorem \ref{dyson-th} use GUE matrix renormalised by $\ 1/\sqrt{N}$, as described in Definition \ref{herm-mat-def}.
+		Following \cite{Jo2001}, let$\ M$ be a matrix such as$\ M=(W+aV)/\sqrt{N}$ with$\ W$ a Wigner matrix and$\ V$ a GUE matrix (if we want to have the same result as \ref{dyson-th}, we should use$\ V' = V/\sqrt{N}$ with V a GUE matrix). Assuming that$\ X(0) = H/\sqrt{N}$, then the distribution of$\ M$ is the same as the distribution of$\ X(a^2/N)$. \newline
+
+		Referring to \cite{Jo2001}, Proposition 1.1. in \ gives the eigenvalues measure of$\ M$. In \cite{taotopics}, this result is also presented (Theorem 3.1.18) using an Hermitian matrix as initial condition instead of a Wigner matrix. Here we choose to expose the latter formulation which we consider simplier and more coherent with our study :
+
+% O-U ac Hadamard
+			\begin{figure}[h]
+				\centering
+				\begin{minipage}[b]{0.4\textwidth}
+					\[ \begin{array}{ccccc}
+					\lambda & : & \mathcal{H}_N(\mathbb{C}) & \to & \mathbb{R} \\
+					 & & A & \mapsto & \lambda(A) \\
+					\end{array} \]
+				\end{minipage}
+				\hspace{1cm}
+				\begin{minipage}[b]{0.4\textwidth}
+					\[ \begin{array}{ccccc}
+					X & : & \mathbb{R} & \to & \mathcal{M} \\
+					 & & t & \mapsto & X(t) \\
+					\end{array} \]
+				\end{minipage}
+			\end{figure}\\ \newline
+
+%ito dp
+&= f(0,Z(0))+\int_0^t\left(\frac{\partial f}{\partial s}(s,Z(s))+\frac{\partial f}{\partial x}(s,Z(s))h(s)+\frac{1}{2}\frac{\partial^2 f}{\partial x^2}k(s)^2\right)ds+\int_0^t\frac{\partial f}{\partial x}(s,Z(s))k(s)dB(s)
+				\notag

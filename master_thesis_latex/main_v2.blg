@@ -1,0 +1,14 @@
+[0] Config.pm:343> INFO - This is Biber 2.5
+[0] Config.pm:346> INFO - Logfile is 'main_v2.blg'
+[68] biber-darwin:290> INFO - === Mon Sep 11, 2017, 09:08:32
+[100] Biber.pm:351> INFO - Reading 'main_v2.bcf'
+[235] Biber.pm:776> INFO - Found 16 citekeys in bib section 0
+[255] Biber.pm:3493> INFO - Processing section 0
+[279] Biber.pm:3657> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[281] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[284] bibtex.pm:1048> INFO - Found BibTeX data source 'biblio.bib'
+[411] UCollate.pm:66> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[412] UCollate.pm:66> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[412] Biber.pm:3306> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'fr-FR'
+[443] bbl.pm:526> INFO - Writing 'main_v2.bbl' with encoding 'latin1'
+[446] bbl.pm:619> INFO - Output to main_v2.bbl

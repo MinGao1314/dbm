@@ -15,3 +15,16 @@ beta_ensemble/plot/
 dyson_brownian_motion/.ipynb_checkpoints/
 dyson_brownian_motion/plot/
 tridiagonal_models/.ipynb_checkpoints/
+
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb

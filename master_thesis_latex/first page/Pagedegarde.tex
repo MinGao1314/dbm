@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Page de garde (Pagedegarde.tex)   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dorian Depriester, 2014
+
+\makeatletter
+\def\@ecole{école}
+\newcommand{\ecole}[1]{
+  \def\@ecole{#1}
+}
+
+\def\@specialite{}
+\newcommand{\specialite}[1]{
+  \def\@specialite{#1}
+}
+
+%\def\@ED{\'{E}cole Doctorale}
+%\newcommand{\ED}[1]{
+%  \def\@ED{#1}
+%}
+
+\def\@doctorat{Doctorat}
+\newcommand{\doctorat}[1]{
+  \def\@doctorat{#1}
+}
+
+\def\@adresse{Adresse}
+\newcommand{\adresse}[1]{
+  \def\@adresse{#1}
+}
+
+\def\@directeur{directeur}
+\newcommand{\directeur}[1]{
+  \def\@directeur{#1}
+}
+
+\def\@encadrant{encadrant}
+\newcommand{\encadrant}[1]{
+  \def\@encadrant{#1}
+}
+\def\@jurya{}{}{}
+\newcommand{\jurya}[3]{
+  \def\@jurya{#1,	& #2	& #3\\}
+}
+\def\@juryb{}{}{}
+\newcommand{\juryb}[3]{
+  \def\@juryb{#1,	& #2	& #3\\}
+}
+\def\@juryc{}{}{}
+\newcommand{\juryc}[3]{
+  \def\@juryc{#1,	& #2	& #3\\}
+}
+\def\@juryd{}{}{}
+\newcommand{\juryd}[3]{
+  \def\@juryd{#1,	& #2	& #3\\}
+}
+\def\@jurye{}{}{}
+\newcommand{\jurye}[3]{
+  \def\@jurye{#1,	& #2	& #3\\}
+}
+
+\makeatother
+
+\newcommand\BackgroundPic{%
+	\put(0,0){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			%\includegraphics[height=0.45\paperheight]{bordure.png}%
+			\vfill
+		}
+	}
+}
+%\newcommand\EtiquetteThese{%
+%	\put(0,0){%
+%		\parbox[t][\paperheight]{\paperwidth}{%
+%			\hfill
+%			\colorbox{blue}{		
+%				\begin{minipage}[b]{3em}
+%					\centering\Huge\textcolor{white}{M\\E\\M\\O\\I\\R\\E\\}
+%					\vspace{0.2cm}
+%				\end{minipage}
+%			}
+%		}
+%	}
+%}
+
+\makeatletter
+\newcommand{\pagedegarde}{
+\newgeometry{top=2.5cm, bottom=1cm, left=2cm, right=1.5cm}
+%\AddToShipoutPicture*{\BackgroundPic}
+%\AddToShipoutPicture*{\EtiquetteThese}
+  \begin{titlepage}
+  \centering
+      \includegraphics[width=0.4\textwidth]{ECL_logo.png}
+      \hfill 
+      \includegraphics[width=0.3\textwidth]{image002.png}
+      \\
+    \vspace{1cm} 
+      %{\Large \@ED}\\
+    \vspace{1cm}
+      {\huge 
+      	{\bfseries \@doctorat}\\
+    \vspace{0.5cm}
+      	MASTER'S THESIS}\\
+    \vspace{1cm}
+   		{\bfseries for the final defense at }\\
+    \vspace{1cm}
+    	{\huge\bfseries \@ecole}\\
+    \vspace{0.5cm}
+    	{\Large{\bfseries \@specialite}}
+    \vspace{2cm}
+    	\textit{presented by}\\
+    \vspace{0.5cm}
+    	{\Large {\bfseries \@author}} \\
+    \vspace{0.5cm}
+    	\@date \\
+    \vfill
+       {\LARGE \color[rgb]{0,0,1} \bfseries{\@title}} \\
+    \vfill
+        Supervisor at Université Lille 1 : {\bfseries \@directeur}\\
+        Supervisor at Ecole Centrale de Lille: {\bfseries \@encadrant}\\
+    \vfill
+	\begin{tabular}{>{\bfseries}lll}
+		\\
+		\@jurya
+		\@juryb
+		\@juryc
+		\@juryd
+		\@jurye
+
+	\end{tabular}
+	\vfill
+	
+	\@adresse
+  \end{titlepage}
+
+
+
+
+\restoregeometry  
+}
