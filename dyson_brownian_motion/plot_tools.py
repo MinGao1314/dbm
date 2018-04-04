@@ -81,7 +81,7 @@ def plot_traj_with_histo(dbm, title):
     plt.savefig(title, bbox_inches='tight')
 
 
-def plot_traj_with_histo_sclaw(dbm_rescale, R, title):
+def plot_traj_with_histo_sclaw(dbm_rescale, R, title, n_bins=10):
     fig = plt.figure(1, figsize=(14, 6))
     fig.subplots_adjust(wspace=.1)
     gs = GridSpec(1, 2, width_ratios=[3, 1])
@@ -94,7 +94,7 @@ def plot_traj_with_histo_sclaw(dbm_rescale, R, title):
 
     # plot final values histogram
     traj_hist = plt.subplot(gs[1])
-    hist = traj_hist.hist(dbm_rescale.eigen_values[-1], bins=10, range=(-R, R), normed=True, orientation='horizontal',
+    hist = traj_hist.hist(dbm_rescale.eigen_values[-1], bins=n_bins, range=(-R, R), normed=True, orientation='horizontal',
                           label="Histogram at$\ t_f$")
 
     plt.setp(traj_hist.get_yticklabels(), visible=False)
